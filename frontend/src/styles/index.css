@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(../images/bg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 60%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 8vh;
+  background: rgba(94, 129, 64, 0.5);
+}
+
+.navbar .nav {
+  color: rgba(255, 255, 255, 0.801);
+  width: 33.3%;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 10px;
+  font-weight: 600;
+}
+
+.navbar .nav:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(94, 129, 64, 0.705)));
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(94, 129, 64, 0.705));
+  cursor: pointer;
+}
+
+.mainMenu .utility-container {
+  padding-top: 17vh;
+}
+
+.mainMenu .newRound-select, .mainMenu .addcourse-select, .mainMenu .scores-select {
+  padding-top: 1.7vh;
+}
+
+.button {
+  width: 80vw;
+  height: 9vh;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.801);
+  color: #5e8140;
+  -webkit-box-shadow: 2px 3px 7px #00000054;
+          box-shadow: 2px 3px 7px #00000054;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 0 auto 3vh;
+  font-weight: 600;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.course-select {
+  width: 80%;
+  margin: auto;
+  padding-top: 8.2vh;
+}
+
+.course-select .course-select-guide {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0 0 3vh 0;
+}
+
+.course-select .courseitem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.course-select .courseitem .course-name {
+  padding: 1.7vh 2vw;
+  text-transform: capitalize;
+}
+
+.course-select .courseitem .course-holes {
+  font-size: 1.4em;
+  padding: 1vh 4vw;
+}
+
+.newround {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 8.2vh;
+}
+
+.newround .info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (40vw)[2];
+      grid-template-columns: repeat(2, 40vw);
+  -ms-grid-rows: (6vh)[2];
+      grid-template-rows: repeat(2, 6vh);
+}
+
+.newround .info .info-coursename {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1/1/1;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.newround .info .info-currenthole {
+  text-align: end;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2/1/2;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.newround .info .info-currenthole-par {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2/1/2/1;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.newround .currentscore {
+  margin-top: 12vh;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.newround .scorecounter {
+  margin: 7vh auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 2vw;
+  -ms-grid-columns: 25% 20vh 25%;
+      grid-template-columns: 25% 20vh 25%;
+  -ms-grid-rows: 15vh 10vh;
+      grid-template-rows: 15vh 10vh;
+}
+
+.newround .scorecounter .holescore {
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.801);
+  font-size: 5em;
+  border: none;
+  color: #5e8140;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2/1/2;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.newround .scorecounter .plus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1/3/1/3;
+  padding: 1.2vh;
+  margin-top: 3.5vh;
+  height: 8vh;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.801);
+  color: #5e8140;
+  font-size: 2em;
+  padding-left: 3vh;
+}
+
+.newround .scorecounter .minus {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1/1/1/1;
+  padding: 1.2vh;
+  margin-top: 3.5vh;
+  height: 8vh;
+  color: #5e8140;
+  background: rgba(255, 255, 255, 0.801);
+  border-radius: 5px;
+  font-size: 2em;
+  padding-left: 4vh;
+}
+
+.newround .scorecounter .next {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: 2/3/2/3;
+  background: url(../images/arrow_w.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding: 1.2vh;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 2em;
+  padding-left: 3vh;
+}
+
+.newround .scorecounter .prev {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: 2/1/2/1;
+  background: url(../images/arrow_w.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1.2vh;
+  height: 8vh;
+  border-radius: 5px;
+  font-size: 2em;
+  padding-left: 3vh;
+}
+
+.newround .scorecounter .stop {
+  padding-top: 1vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: 2/2/2/2;
+  height: 80%;
+  width: 100%;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.801);
+  color: #5e8140;
+  -webkit-box-shadow: 2px 3px 7px #00000054;
+          box-shadow: 2px 3px 7px #00000054;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.newround .scorecounter .stop:hover {
+  cursor: pointer;
+}
+
+.results {
+  width: 80%;
+  margin: 7vh auto 0 auto;
+}
+
+.results .results-coursename {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.results .results-totalscore, .results .results-holes-text, .results .results-totalpar {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.results .results-holes-container {
+  margin: 4vh 0 0 0;
+}
+
+.results .results-holes-container .results-holes {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 3px;
+  -ms-grid-columns: (30px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 30px);
+}
+
+.results .results-holes-container .results-holes .results-hole {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.801);
+  width: 30px;
+  height: 60px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #5e8140;
+  border: 1px solid #5e8140;
+}
+
+.results .results-holes-container .results-holes .results-hole .hole-number {
+  background: rgba(255, 255, 255, 0.815);
+  border-bottom: 1px solid #5e8140;
+}
+
+.results .back-home {
+  margin: 10vh 0 0 0;
+  padding: 1.6vh 0 0 0;
+}
+
+.addcourse {
+  width: 80%;
+  margin: 7vh auto 0 auto;
+}
+
+.addcourse .addcourse-coursename, .addcourse .lengthquestion, .addcourse .courselength-select {
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.addcourse .addcourse-coursename-input {
+  width: 100%;
+  height: 5vh;
+  background: rgba(255, 255, 255, 0.801);
+  color: #5e8140;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.5em;
+  padding: 0 0 0 3px;
+}
+
+.addcourse .lengthquestion {
+  margin: 2vh 0 1vh 0;
+}
+
+.addcourse .courselength-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.addcourse .courselength-select .courselength {
+  padding: 0 0 0 0;
+  font-size: 1em;
+  width: 11vw;
+  height: 5vh;
+  margin: 0vh 2vh 2vh 0vh;
+  background: rgba(255, 255, 255, 0.801);
+  color: #5e8140;
+}
+
+.addcourse .holelist {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 3px;
+  -ms-grid-columns: (30px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 30px);
+}
+
+.addcourse .holelist .hole {
+  width: 30px;
+  height: 60px;
+  font-weight: 600;
+  color: #5e8140;
+  border: 1px solid #5e8140;
+  text-align: center;
+}
+
+.addcourse .holelist .hole .holenumber {
+  background: rgba(255, 255, 255, 0.815);
+  border-bottom: 1px solid #5e8140;
+  font-size: 1.5em;
+}
+
+.addcourse .holelist .hole .holepar {
+  width: 28px;
+  height: 28px;
+  margin-top: 0;
+  border: none;
+  text-align: center;
+  color: #5e8140;
+  background: rgba(255, 255, 255, 0.801);
+  font-size: 1.5em;
+  border-radius: 0;
+}
+
+.addcourse .holelist .hole .holeinfo {
+  border-bottom: 1px solid #5e8140;
+}
+
+.addcourse .holelist .hole .holeinfo, .addcourse .holelist .hole .parinfo {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.801);
+  width: 28px;
+  height: 29px;
+  padding: .6vh 0 0 0;
+  font-size: .8em;
+  font-weight: 600;
+  color: #5e8140;
+}
+
+.addcourse .savecourse {
+  padding: 1.6vh 0 0 0;
+  margin: 4vh 0 0 0;
+}
+
+.scorelist {
+  width: 80%;
+  margin: 7vh auto 0 auto;
+}
+
+.scorelist .scoreitem {
+  -webkit-box-shadow: 2px 3px 7px #00000054;
+          box-shadow: 2px 3px 7px #00000054;
+  padding: 0 2vw;
+  margin: 1vh 0;
+  background: rgba(255, 255, 255, 0.801);
+  font-size: 1.2em;
+  color: #5e8140;
+  border-radius: 2px;
+}
+
+.scorelist .scoreitem .scoreitem-course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 1.3em;
+}
+
+.scorelist .scoreitem .scoreitem-coursename {
+  text-transform: capitalize;
+}
+
+.scorelist .scoreitem .scoreitem-date {
+  padding: 1vh 0 0 2vw;
+  font-size: .7em;
+}
+
+.scorelist .bronze {
+  background: linear-gradient(45deg, #e0a76e, #d18b44);
+}
+
+.scorelist .silver {
+  background: linear-gradient(45deg, white, silver);
+}
+
+.scorelist .gold {
+  background: linear-gradient(45deg, #ffe07a 21%, #e8b923 92%);
+}
+
+.scorelist .plat {
+  background: linear-gradient(45deg, #b3dced 21%, #5bc0be 92%);
+}
+/*# sourceMappingURL=index.css.map */
