@@ -1,0 +1,74 @@
+{
+  "scoreData": [
+    {
+      "id": 1,
+      "course": "Laajavuori",
+      "score": "68",
+      "scoreFromPar": "-4",
+      "date": "20.5.2018"
+    },
+    {
+      "id": 2,
+      "course": "Keljo",
+      "score": "60",
+      "scoreFromPar": "5",
+      "date": "16.8.2019"
+    },
+    {
+      "id": 3,
+      "course": "Peurunka",
+      "score": "70",
+      "scoreFromPar": "6",
+      "date": "17.8.2019"
+    },
+    {
+      "id": 4,
+      "course": "Keljonkangas",
+      "score": "1",
+      "scoreFromPar": "-11",
+      "date": "23.8.2019"
+    },
+    {
+      "id": 5,
+      "course": "Kaikki",
+      "score": 26,
+      "scoreFromPar": -1,
+      "date": "24.8.2019"
+    },
+    {
+      "id": 6,
+      "course": "Kikki",
+      "score": 47,
+      "scoreFromPar": 17,
+      "date": "27.8.2019"
+    },
+    {
+      "id": 7,
+      "course": "Kikki",
+      "score": 0,
+      "scoreFromPar": -30,
+      "date": "27.8.2019"
+    },
+    {
+      "id": 8,
+      "course": "Laukaa",
+      "score": 27,
+      "scoreFromPar": -1,
+      "date": "30.8.2019"
+    },
+    {
+      "id": 9,
+      "course": "Keljonkangas",
+      "score": 0,
+      "scoreFromPar": -12,
+      "date": "30.8.2019"
+    },
+    {
+      "id": 10,
+      "course": "Laukaa",
+      "score": 0,
+      "scoreFromPar": -28,
+      "date": "30.8.2019"
+    }
+  ]
+}
